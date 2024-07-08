@@ -97,7 +97,7 @@ const GrowthAndWhy = () => {
 					</div>
 					<div className="md:max-w-[1240px] md:mx-auto">
 						<div className="h-[40px] flex md:gap-0  justify-around md:justify-between mb-4">
-							<h2 className="md:w-[274px]"></h2>
+							<h2 className="md:w-[274px] w-[100px]"></h2>
 							<h2 className="text-sm md:text-[24px] md:w-[274px]">
 								<span className="bg-gradient-to-r from-[#01F3FD] to-[#FF6DC1] text-transparent bg-clip-text">
 									Avalerian
@@ -115,18 +115,18 @@ const GrowthAndWhy = () => {
 											index == 4 ? "" : "border-b"
 										}  border-0 border-slate-800 pb-2`}
 									>
-										<h3 className="text-xs md:text-[16px] max-w-[150px] md:max-w-[267px] md:min-w-[267px]">
+										<h3 className="text-xs md:text-[16px] w-[100px] md:max-w-[267px] md:min-w-[267px]">
 											{row.title}
 										</h3>
-										<div className="text-xs md:text-[16px] max-w-[150px] md:max-w-[267px] gap-2 md:min-w-[267px] flex items-start ">
+										<div className="text-xs md:text-[16px] w-[100px] md:max-w-[267px] md:gap-2 md:min-w-[267px] flex items-start ">
 											<img src={check} className="md:w-[24px] md:h-[24px]" />
 											<p className="text-[#6A6E87] font-medium">{row.pt1}</p>
 										</div>
-										<div className=" text-xs md:text-[16px] max-w-[150px]  md:max-w-[267px] gap-2  md:min-w-[267px] items-start  flex">
+										<div className=" text-xs md:text-[16px] w-[100px]  md:max-w-[267px] md:gap-2  md:min-w-[267px] items-start  flex">
 											<img src={close} className="md:w-[24px] md:h-[24px]"/>
 											<p className="text-[#6A6E87] font-medium">{row.pt2}</p>
 										</div>
-										<div className="text-xs md:text-[16px] max-w-[150px]  md:max-w-[267px] gap-2  md:min-w-[267px] items-start  flex">
+										<div className="text-xs md:text-[16px] w-[100px] md:max-w-[267px] md:gap-2  md:min-w-[267px] items-start  flex">
 											<img src={close} className="md:w-[24px] md:h-[24px]"/>
 											<p className="text-[#6A6E87] font-medium">{row.pt3}</p>
 										</div>
