@@ -4,7 +4,7 @@ import logo from '../assets/logo.svg'
 const Navbar = () => {
   return (
     <>
-        <div className='z-50  fixed w-full mx-auto max-w-[1400px] align-center px-10 flex flex-col md:flex-row items-center h-20 justify-between p-4 '>
+        <div className='z-50   w-full mx-auto max-w-[1400px] align-center px-10 flex flex-col md:flex-row items-center h-20 justify-between p-4 '>
             <div className='flex flex-row gap-1 bg-transparent items-center justify-between'>
                 <img src={logo} className='bg-transparent h-14'/>
                 <p className='bg-transparent text-xl  font-bold'>Avalerian</p>
