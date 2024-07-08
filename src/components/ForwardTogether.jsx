@@ -51,35 +51,35 @@ const vertical = [
 const ForwardTogether = () => {
 	return (
 		<>
-			<div className="relative bg-transparent flex justify-around my-10">
+			<div className="relative bg-transparent w-screen mx-2  gap-20 md:gap-0 flex flex-col md:flex-row md:items-start md:justify-around my-10">
 				<div>
-					<div className="bg-transparent max-w-[460px]">
-						<h2 className=" bg-transparent text-[60px]">
+					<div className="bg-transparent max-w-[350px]  space-y-6 md:max-w-[460px]">
+						<h2 className=" bg-transparent text-6xl md:text-[60px]">
 							Forward{" "}
 							<span className="bg-transparent bg-gradient-to-br from-[#01F3FD] to-[#FF6DC1] text-transparent bg-clip-text">
 								together
 							</span>
 						</h2>
-						<p className="bg-transparent text-[#E7E9F7] text-[24px]">
+						<p className="bg-transparent text-[#E7E9F7] text-[14px] md:text-[24px]">
 							We've listed a few industries that we like. If you're not sure if
 							your business fits the bill, we'd love to talk anyway.
 						</p>
 					</div>
 				</div>
-				<div className="flex max-w-[620px] bg-transparent gap-4">
+				<div className="flex md:max-w-[620px] bg-transparent gap-4">
 					<div className="bg-transparent flex flex-col gap-4">
-						<p className="bg-transparent flex-1/2 pl-2 text-[14px] border-l border-[#00E5FF] max-w-[295px] font-medium">
+						<p className="bg-transparent flex-1/2 pl-2 text-sm md:text-[14px] border-l border-[#00E5FF] md:max-w-[295px] font-medium">
 							Horizontal software solutions across industries
 						</p>
 						<div>
 							<ul className="bg-transparent space-y-4">
 								{horizontal.map((data) => (
-									<li className=" max-w-[295px] h-[226px] bg-slate-950 p-[30px] flex flex-col justify-between gap-10 border-t border-[#4BD2E4]">
+									<li className=" md:max-w-[295px] md:h-[226px] bg-slate-950 p-2 md:p-[30px] flex flex-col justify-between md:gap-8 h-[130px] border-t border-[#4BD2E4]">
 										<img
 											src={data.svg}
 											className="bg-transparent bg-slate-900 rounded-full p-[16px] w-[77px]"
 										/>
-										<p className=" bg-transparent bg-slate-950 w-[180px] uppercase text-[14px] tracking-wider ">
+										<p className=" bg-transparent bg-slate-950 w-[180px] uppercase text-xs md:text-[14px] tracking-wider ">
 											{data.title}
 										</p>
 									</li>
@@ -94,12 +94,12 @@ const ForwardTogether = () => {
 						<div>
 							<ul className="bg-transparent space-y-4">
 								{vertical.map((data) => (
-									<li className=" max-w-[295px] bg-slate-950 p-[30px] flex flex-col justify-between gap-8 border-t border-[#FF83B7] h-[226px]">
+									<li className=" md:max-w-[295px] bg-slate-950 p-2 md:p-[30px] flex flex-col justify-between md:gap-8 border-t border-[#FF83B7] h-[130px] md:h-[226px]">
 										<img
 											src={data.svg}
 											className="bg-transparent bg-slate-900 rounded-full p-[16px] w-[77px]"
 										/>
-										<p className="bg-transparent bg-slate-950 w-[180px] uppercase text-[14px] tracking-wider ">
+										<p className="bg-transparent bg-slate-950 w-[180px] uppercase text-xs md:text-[14px] tracking-wider ">
 											{data.title}
 										</p>
 									</li>
@@ -108,8 +108,8 @@ const ForwardTogether = () => {
 						</div>
 					</div>
 				</div>
-				<img src={rectangle1} className="left-[-57px] bg-transparent bottom-[-150px] w-[900px] h-[1200px]  absolute -z-2" />
-				<img src={hollow} className=" bg-transparent w-[630px] h-[600px] left-[-157px] -bottom-10  absolute -z-2" />
+				<img src={rectangle1} className="left-[-57px] bg-transparent bottom-[-300px] md:bottom-[-150px] md:w-[900px] md:h-[1200px]  absolute -z-2" />
+				<img src={hollow} className=" bg-transparent hidden md:block md:w-[630px] md:h-[600px] left-[-157px] -bottom-64 md:-bottom-10  absolute -z-2" />
 				
 			</div>
 		</>

@@ -48,12 +48,12 @@ const dataSet = [
 const Characteristics = () => {
 	return (
 		<>
-			<div className="bg-transparent w-full z-20 flex items-center flex-col gap-8 mx-auto">
-				<h3 className="bg-transparent text-slate-300 text-[24px]">
+			<div className="bg-transparent w-full z-20 flex items-center flex-col gap-8 mx-4 md:mx-auto">
+				<h3 className="bg-transparent text-slate-300 text-[12px] md:text-[24px]">
 					We are excited about companies with the following characteristics
 				</h3>
-				<div className="bg-transparent max-w-[800px]">
-					<ul className="bg-transparent flex flex-wrap  justify-between">
+				<div className="bg-transparent w-full md:max-w-[800px]">
+					<ul className="bg-transparent flex flex-col md:flex-row flex-wrap items-center justify-between">
 						{dataSet.map((data) => (
 							<li
 								key={data.id}

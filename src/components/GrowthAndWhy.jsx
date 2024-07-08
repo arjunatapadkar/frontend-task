@@ -58,11 +58,11 @@ const table = [
 const GrowthAndWhy = () => {
 	return (
 		<>
-			<div className="bg-transparent  relative w-full px-20 my-12 mb-24 z-10">
-				<div className="bg-transparent mx-auto max-w-[860px] ">
+			<div className="bg-transparent  relative w-full mx-1 md:px-20 my-12 mb-24 z-10">
+				<div className="bg-transparent  md:mx-auto md:max-w-[860px] ">
 					<div className="bg-transparent space-y-8">
 						<div className="bg-transparent text-center space-y-6">
-							<h1 className="bg-transparent w-[891px] font-light text-5xl text-center">
+							<h1 className="bg-transparent md:w-[891px] font-light text-2xl md:text-5xl text-center">
 								<span className="bg-transparent bg-gradient-to-b from-[#01F3FD] to-[#FF6DC1] text-transparent bg-clip-text">
 									Growth
 								</span>{" "}
@@ -70,18 +70,18 @@ const GrowthAndWhy = () => {
 							</h1>
 							<p>Interested in getting a valuation?</p>
 						</div>
-						<div className="bg-transparent flex justify-between h-[53px]">
-							<p className=" bg-slate-950 flex items-center w-[190px] pl-5 ">
+						<div className="bg-transparent flex text-sm  justify-around md:justify-between h-[53px]">
+							<p className=" bg-slate-950 flex items-center md:w-[190px] p-2 md:pl-5 ">
 								Name
 							</p>
-							<p className=" bg-slate-950 flex items-center w-[190px] pl-5 ">
+							<p className=" bg-slate-950 flex items-center md:w-[190px] p-2 md:pl-5 ">
 								Company Name
 							</p>
-							<p className=" bg-slate-950 flex items-center w-[190px] pl-5 ">
+							<p className=" bg-slate-950 flex items-center md:w-[190px] p-2 md:pl-5 ">
 								Email
 							</p>
 							<button class="bg-transparent bg-gradient-to-br from-[#01F3FD] to-[#FF6DC1] text-white font-sm  p-[1px]">
-								<span class="flex w-full bg-black text-slate-500  px-5 py-3">
+								<span class="flex w-full bg-black text-slate-500  md:px-5 py-3">
 									Get in touch
 								</span>
 							</button>
@@ -95,39 +95,39 @@ const GrowthAndWhy = () => {
 							Avalerian bring experience, growth and independence for you.
 						</p>
 					</div>
-					<div className="max-w-[1240px] mx-auto">
-						<div className="h-[40px] flex justify-between mb-4">
-							<h2 className="w-[274px]"></h2>
-							<h2 className="text-[24px] w-[274px]">
+					<div className="md:max-w-[1240px] md:mx-auto">
+						<div className="h-[40px] flex md:gap-0  justify-around md:justify-between mb-4">
+							<h2 className="md:w-[274px]"></h2>
+							<h2 className="text-sm md:text-[24px] md:w-[274px]">
 								<span className="bg-gradient-to-r from-[#01F3FD] to-[#FF6DC1] text-transparent bg-clip-text">
 									Avalerian
 								</span>{" "}
 							</h2>
-							<h2 className="text-[24px] w-[274px]">Private equity</h2>
-							<h2 className="text-[24px] w-[274px]">Venture Capital</h2>
+							<h2 className="text-sm md:text-[24px] md:w-[274px]">Private equity</h2>
+							<h2 className="text-sm md:text-[24px] md:w-[274px]">Venture Capital</h2>
 						</div>
 						<div>
 							<ul className="flex flex-col gap-4 ">
 								{table.map((row, index) => (
 									<li
 										key={index}
-										className={`h-full flex  items-start gap-10 ${
+										className={`h-full flex md:flex-row items-start md:gap-10 ${
 											index == 4 ? "" : "border-b"
 										}  border-0 border-slate-800 pb-2`}
 									>
-										<h3 className="text-[16px] max-w-[267px] min-w-[267px]">
+										<h3 className="text-xs md:text-[16px] max-w-[150px] md:max-w-[267px] md:min-w-[267px]">
 											{row.title}
 										</h3>
-										<div className="max-w-[267px] gap-2 min-w-[267px] flex items-start ">
-											<img src={check} className="w-[24px] h-[24px]" />
+										<div className="text-xs md:text-[16px] max-w-[150px] md:max-w-[267px] gap-2 md:min-w-[267px] flex items-start ">
+											<img src={check} className="md:w-[24px] md:h-[24px]" />
 											<p className="text-[#6A6E87] font-medium">{row.pt1}</p>
 										</div>
-										<div className=" text-[16px]  max-w-[267px] gap-2  min-w-[267px] items-start  flex">
-											<img src={close} />
+										<div className=" text-xs md:text-[16px] max-w-[150px]  md:max-w-[267px] gap-2  md:min-w-[267px] items-start  flex">
+											<img src={close} className="md:w-[24px] md:h-[24px]"/>
 											<p className="text-[#6A6E87] font-medium">{row.pt2}</p>
 										</div>
-										<div className=" text-[16px]  max-w-[267px] gap-2  min-w-[267px] items-start  flex">
-											<img src={close} />
+										<div className="text-xs md:text-[16px] max-w-[150px]  md:max-w-[267px] gap-2  md:min-w-[267px] items-start  flex">
+											<img src={close} className="md:w-[24px] md:h-[24px]"/>
 											<p className="text-[#6A6E87] font-medium">{row.pt3}</p>
 										</div>
 									</li>
@@ -138,7 +138,7 @@ const GrowthAndWhy = () => {
 				</div>
 				
 				<img src={tint} className="absolute bg-transparent h-[1500px] right-[-57px] top-[-500px]" />
-				<img src={sphere} className="absolute bg-transparent overflow-hidden h-[700px] right-[-300px] -top-10" />
+				<img src={sphere} className="absolute hidden md:block bg-transparent overflow-hidden h-[700px] right-[-300px] -top-10" />
 
 			</div>
 		</>

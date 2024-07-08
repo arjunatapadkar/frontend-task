@@ -5,10 +5,10 @@ const Hero = () => {
 		<>
 			<div className="z-10 bg-transparent w-full mt-40 flex flex-col items-center gap-14 my-24">
 				<div className="items-center w-full flex bg-transparent flex-col gap-8">
-					<p className="text-[70px] bg-transparent w-[700px] text-center leading-none">
+					<p className="text-[40px] md:text-[70px] bg-transparent w-[400px] md:w-[700px] text-center leading-none">
 						We buy exceptional software companies
 					</p>
-					<p className="text-xl text-[#E7E9F7] bg-transparent">
+					<p className=" text-sm md:text-xl text-[#E7E9F7] bg-transparent">
 						We enable founders to secure their legacy and move on to their{" "}
 						<br /> next adventure while participating in the next horizon of
 						growth.

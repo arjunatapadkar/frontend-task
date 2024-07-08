@@ -6,7 +6,7 @@ import tint4 from '../assets/tint4.svg'
 const GetInTouch = () => {
 	return (
 		<>
-			<div className="relative mt-24 flex justify-between z-10 mb-16 mx-10">
+			<div className="relative mt-24 flex flex-col md:flex-row justify-between z-10 mb-16 mx-2 md:mx-10">
 				<div className="p-6 space-y-8">
 					<div className="space-y-1 ">
 						<h2 className="bg-gradient-to-br from-[#01F3FD] to-[#FF6DC1] text-transparent bg-clip-text text-[60px]">
@@ -44,7 +44,7 @@ const GetInTouch = () => {
 					</div>
 				</div>
 				<form className="p-6 flex flex-col gap-3 ">
-					<div className="flex justify-between w-[503px] gap-6">
+					<div className="flex justify-between md:w-[503px] gap-6">
 						<input className="outline-none h-[53px] w-full bg-slate-950 px-3 py-2 text-[14px]" type="text" placeholder="First Name" />
 						<input className="outline-none h-[53px] w-full bg-slate-950 px-3 py-2 text-[14px]" type="text" placeholder="Last Name" />
 					</div>

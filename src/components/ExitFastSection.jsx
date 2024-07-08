@@ -7,11 +7,11 @@ import cube from "../assets/cube.png";
 const ExitFastSection = () => {
 	return (
 		<>
-			<div className="relative bgotransparent z-10 flex gap-36 mx-auto">
-				<div className="w-[470px] h-[620px]">
+			<div className="relative bgotransparent z-10 flex flex-col md:flex-row gap-36 mx-auto">
+				<div className="mx-5 md:w-[470px] md:h-[620px]">
 					<img src={timeline} />
 				</div>
-				<div className="w-[400px] space-y-5">
+				<div className="mx-5 w-[400px] space-y-5">
 					<h2 className="font-light text-[60px]">
 						Exit{" "}
 						<span className="bg-gradient-to-b from-[#01F3FD] to-[#FF6DC1] text-transparent bg-clip-text">
